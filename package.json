@@ -1,0 +1,15 @@
+{
+  "name": "asprao78.github.io",
+  "version": "1.0.0",
+  "description": "Srini's Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Srini",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.24.4",
+    "reveal.js": "^5.1.0"
+  }
+}
