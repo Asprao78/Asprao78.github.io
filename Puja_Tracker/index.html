@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pooja Tracker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Garamond;
+            background-color: orange;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 50px;
+
+        }
+
+        .accordion {
+            background-color: #eee;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 25px;
+            transition: 0.4s;
+            font-family: Garamond;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: black;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        hr{
+            color: black;            
+            border: medium solid;
+            
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+</head>
+
+<body>
+    <h1>Srinivas Pooja Tracker</h1>
+    <div class="images">        
+        <img src="Designer (17).png" alt="Thai Hanuman" width="896" height="512">
+    </div>
+    <br/>
+    <hr>
+    <br>
+    <button class="accordion"><u>Day 1:</u> 27 May 2024, Monday - Done</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1" checked>
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2" checked>
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3" checked>
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 2:</u> 28 May 2024, Tuesday - Done</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1" checked>
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2" checked>
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3" checked>
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 3:</u> 29 May 2024, Wednesday - Done</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1" checked>
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2" checked>
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3" checked>
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 4:</u> 30 May 2024, Thursday - Done</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1" checked>
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2" checked>
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3" checked>
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 5:</u> 31 May 2024, Friday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 6:</u> 01 June 2024, Saturday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 7:</u> 02 June 2024, Sunday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 8:</u> 03 June 2024, Monday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 9:</u> 04 June 2024, Tuesday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 10:</u> 05 June 2024, Wednesday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 11:</u> 06 June 2024, Thursday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 12:</u> 07 June 2024, Friday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 13:</u> 08 June 2024, Saturday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 14:</u> 09 June 2024, Sunday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 15:</u> 10 June 2024, Monday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 16:</u> 11 June 2024, Tuesday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 17:</u> 12 June 2024, Wednesday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 18:</u> 13 June 2024, Thursday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 19:</u> 14 June 2024, Friday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 20:</u> 15 June 2024, Saturday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>    
+    <br>
+    <button class="accordion"><u>Day 21:</u> 16 June 2024, Sunday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 22:</u> 17 June 2024, Monday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 23:</u> 18 June 2024, Tuesday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 24:</u> 19 June 2024, Wednesday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 25:</u> 20 June 2024, Thursday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 26:</u> 21 June 2024, Friday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <button class="accordion"><u>Day 27:</u> 22 June 2024, Saturday</button>
+    <div class="panel">
+        <p>
+            <input type="checkbox" id="cb1">
+            <label for="cb1">Do Darshan</label>
+            <br />
+            <input type="checkbox" id="cb2">
+            <label for="cb2">Do 9 Pradakshinas</label>
+            <br />
+            <input type="checkbox" id="cb3">
+            <label for="cb3">Feed Cows</label>
+        </p>
+    </div>
+    <br>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+        
+    </script>
+</body>
+
+</html>
